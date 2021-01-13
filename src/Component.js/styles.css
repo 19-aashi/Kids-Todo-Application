@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.todolist{
+  background-color: rgb(144, 210, 236);
+  width: 50%;
+  border: 1px solid brown;
+  box-shadow: 5px 5px  blue, 10px 10px  red, 15px 15px  green;
+  padding: 50px;
+}
+
+.todoitem{
+  background-color: beige;
+ 
+  margin: auto;
+  align-items: center;
+  width: 40%;
+  white-space: nowrap;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ color: rgb(26, 25, 25);
+   
+    padding: 50px;
+}
+.checkboxlabel{
+  white-space: normal;
+  display:inline-block;
+}
+.todolist:hover {
+  background-color: yellow;
+  transition: 0.2s;
+}
+input[type=checkbox] {
+ 
+  vertical-align: top;
+  display:inline-block;
+ 
+
+
+ 
+
+  font-size: large;
+}
+
+.rotate:hover{
+  background-color: yellow;
+  transition: 0.2s;
+}
+
+      .rotate{
+        left: 50px;
+        width:80px;
+        height:80px;
+        animation: rotation infinite 5s forwards;
+
+}
+@keyframes rotation{
+  from{
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+}
+.row{
+  display: flex;
+  box-shadow: 5px 5px  rgb(51, 51, 100), 10px 10px  rgb(185, 159, 159), 15px 15px  rgb(58, 35, 35);
+  padding: 5px;
+
+}
+.column{
+  flex: 33.3%;
+  box-shadow: 5px 5px  rgb(51, 51, 100), 10px 10px  rgb(185, 159, 159), 15px 15px  rgb(58, 35, 35);
+  padding: 5px;
+  margin: auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
